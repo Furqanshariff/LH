@@ -3,55 +3,55 @@ import React from "react";
 const testimonials = [
   {
     text: "The internship at Learnyhive gave me real-world experience and confidence to crack my first tech job interview! Highly recommended for freshers.",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    image: "/images/p1.jpg",
     name: "Amit Sharma",
     role: "B.Tech Student, Delhi",
   },
   {
     text: "I loved the hands-on projects and 1:1 mentor support. The placement WhatsApp group was a game changer for me.",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    image: "/images/p2.png",
     name: "Priya Nair",
     role: "MCA Graduate, Kerala",
   },
   {
     text: "The dual certification and live classes made my resume stand out. I got shortlisted for interviews within weeks!",
-    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    image: "/images/p3.png",
     name: "Rahul Verma",
     role: "CS Undergrad, Mumbai",
   },
   {
     text: "Mentors here are industry experts who actually care. I built a real portfolio and got my first internship offer.",
-    image: "https://randomuser.me/api/portraits/women/14.jpg",
+    image: "/images/p4.jpg",
     name: "Sneha Patil",
     role: "Engineering Student, Pune",
   },
   {
     text: "The curriculum is practical and up-to-date. I learned more in 4 weeks than in a whole semester at college!",
-    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    image: "/images/p5.jpg",
     name: "Vikram Singh",
     role: "BCA Student, Jaipur",
   },
   {
     text: "I was able to switch from non-tech to tech thanks to Learnyhive. The support and guidance is unmatched.",
-    image: "https://randomuser.me/api/portraits/women/16.jpg",
+    image: "/images/p6.png",
     name: "Anjali Gupta",
     role: "Graduate, Lucknow",
   },
   {
     text: "The live projects and career support helped me land a job at a startup. The best investment in my career!",
-    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    image: "/images/p7.jpg",
     name: "Siddharth Rao",
     role: "MSc IT, Hyderabad",
   },
   {
-    text: "I joined for the AI/ML internship and ended up learning full stack too. The mentors are super helpful and friendly.",
-    image: "https://randomuser.me/api/portraits/women/18.jpg",
+    text: "I joined for the internship and ended up learning full stack too. The mentors are super helpful and friendly.",
+    image: "/images/p8.jpg",
     name: "Ritika Mehra",
     role: "BSc Student, Chandigarh",
   },
   {
     text: "The placement group is very active and I got interview calls from top companies. Thank you Learnyhive!",
-    image: "https://randomuser.me/api/portraits/men/19.jpg",
+    image: "/images/p9.jpg",
     name: "Arjun Desai",
     role: "B.Tech, Ahmedabad",
   },
@@ -76,7 +76,10 @@ const TestimonialsColumn = ({ testimonials, duration = 18, className = "" }) => 
         >
           <p className="text-gray-800 text-lg mb-6">{t.text}</p>
           <div className="flex items-center gap-4 mt-auto">
-            <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow" />
+            {/* Letter avatar instead of image */}
+            <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl font-bold text-blue-700 border-2 border-white shadow">
+              {t.name.charAt(0)}
+            </div>
             <div>
               <div className="font-bold text-gray-900">{t.name}</div>
               <div className="text-gray-500 text-sm">{t.role}</div>

@@ -56,18 +56,18 @@ const AnnouncementBar = () => (
 // Company logos marquee for hero section
 const CompanyLogosMarquee = () => (
   <div className="w-full overflow-hidden py-6">
-    <div className="relative w-full h-24 flex items-center"> {/* Increased height for bigger logos */}
-      <div className="absolute flex items-center gap-16 whitespace-nowrap animate-company-marquee"> {/* Increased gap for spacing */}
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-16 inline" /> </span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-16 inline" /></span>
+    <div className="relative w-full h-16 flex items-center md:h-24"> {/* Responsive height */}
+      <div className="flex items-center gap-6 md:gap-16 whitespace-nowrap animate-company-marquee w-max"> {/* Responsive gap, no absolute */}
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-8 md:h-16 inline" /> </span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-8 md:h-16 inline" /></span>
       </div>
     </div>
     <style>{`
@@ -186,12 +186,12 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2 group">
-              <img src="/images/logolh.png" alt="Learnyhive Logo" className="h-14 w-14" />
+              <img src="/images/logolh.png" alt="Learnyhive Logo" className="h-10 w-10 md:h-14 md:w-14" />
               <div className="flex flex-col justify-center ml-2">
-                <span className="text-2xl font-bold leading-tight">
+                <span className="text-lg md:text-2xl font-bold leading-tight">
                   <span className="text-black group-hover:text-orange-500 transition">Learny</span><span className="text-orange-500">Hive</span>
                 </span>
-                <span className="text-xs text-black-500 font-medium -mt-1">Hive Your Way to Educational Excellence.</span>
+                <span className="text-xs md:text-sm text-black-500 font-medium -mt-1">Hive Your Way to Educational Excellence.</span>
               </div>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
@@ -233,7 +233,7 @@ const Index = () => {
                 <div className="text-base lg:text-lg font-semibold text-blue-100">
                   Full Stack & Cloud Internships – 4 Weeks
                 </div>
-                <Badge className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 text-sm font-medium">
+                <Badge className="bg-orange-500 hover:bg-orange-600 text-white px-2 py-1 text-xs font-medium md:px-4 md:py-2 md:text-sm">
                   🔥 Job-Ready Program with Dual Certificates + Live Projects
                 </Badge>
               </div>
@@ -277,9 +277,9 @@ const Index = () => {
               </div>
             </div>
             {/* Two program cards replacing the old illustration */}
-            <div className="flex flex-col gap-6 lg:flex-row lg:gap-6">
+            <div className="flex flex-col gap-6 lg:flex-row lg:gap-6 justify-center items-center">
               {/* Card 1 */}
-              <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between">
+              <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between mx-auto">
                 <div className="w-full h-40 rounded-t-2xl overflow-hidden">
                   <img src="/images/image9.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
                     </div>
@@ -291,20 +291,23 @@ const Index = () => {
                     <span className="bg-purple-100 text-purple-700 font-bold text-xs px-2 py-1 rounded">LH Internship</span>
                     <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">ANY BRANCH OR DEGREE</span>
                   </div>
+                  {/* Full-Stack Development Card */}
                   <div className="flex-1 flex flex-col justify-end w-full">
                     <div className="font-bold text-lg text-black text-center mb-4">Full-Stack Development</div>
                     <div className="flex justify-between w-full text-xs text-gray-500 mb-2">
                       <span className="font-semibold">Starts soon</span>
-                      <span className="text-red-500 flex items-center gap-1">🔥 Limited Seats Available</span>
+                      <span className="text-red-500 flex items-center gap-1">🔥 Registrations Open Now</span>
                     </div>
-                    <Link to="https://pages.razorpay.com/pl_QutGct2lf243Vp/view"><button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg w-full mb-2 flex items-center justify-center gap-2"><svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M3 5h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A2 2 0 007.48 19h9.04a2 2 0 001.83-1.3L21 13M7 13V6a1 1 0 011-1h5a1 1 0 011 1v7' /></svg>Enroll Now</button>
-                      </Link>
-                    <a href="/FullStackDevelopment" className="text-blue-600 text-sm font-medium underline text-center block">Know More</a>
+                    <a href="/FullStackDevelopment">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg w-full mb-2 flex items-center justify-center gap-2">
+                        Know More
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
               {/* Card 2 */}
-              <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between">
+              <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between mx-auto">
                 <div className="w-full h-40 rounded-t-2xl overflow-hidden">
                   <img src="/images/image10.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
                 </div>
@@ -317,15 +320,18 @@ const Index = () => {
                     <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">ANY BRANCH OR DEGREE</span>
                     {/* <span className="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded">ANY BRANCH OR DEGREE</span>*/}
                   </div>
+                  {/* Cloud Computing Card */}
                   <div className="flex-1 flex flex-col justify-end w-full">
                     <div className="font-bold  text-black text-lg text-center mb-4">Cloud Computing</div>
                     <div className="flex justify-between w-full text-xs text-gray-500 mb-2">
-                      <span className="font-semibold">Today</span>
+                      <span className="font-semibold">Starts soon</span>
                       <span className="text-red-500 flex items-center gap-1">🔥 Registrations Open Now</span>
                     </div>
-                    <Link to="https://rzp.io/rzp/ge1fky8B"><button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg w-full mb-2">Enroll Now</button>
-                      </Link>
-                    <a href="/CloudComputing" className="text-blue-600 text-sm font-medium underline text-center block">Know More</a>
+                    <a href="/CloudComputing">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg w-full mb-2 flex items-center justify-center gap-2">
+                        Know More
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -333,8 +339,8 @@ const Index = () => {
           </div>
         </div>
         {/* Heading above company logos marquee */}
-        <div className="pt-5">{/* 20px padding top */}
-          <h3 className="text-center text-white text-2xl font-bold mb-2 mt-8">Our learners work at top companies</h3>
+        <div className="pt-5 w-full">
+          <h3 className="text-center text-white text-2xl font-bold mb-2 mt-8 w-full max-w-xs mx-auto">Our learners work at top companies</h3>
         </div>
         {/* Company Logos Marquee */}
         <CompanyLogosMarquee />
@@ -653,25 +659,17 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
               <p className="text-gray-400 mb-4">Leading IT training institute with industry-expert instructors and 100% placement assistance.</p>
               <div className="flex space-x-4">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-sm text-gray-400">Kalyan nagar, Bangalore</span>
+                <span className="text-sm text-gray-400">LearnyHive office, Kalyan nagar, Bangalore</span>
               </div>
             </div>
             
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">About Us</a></li>
-                <li><a href="hero" className="hover:text-white">Courses</a></li>
-                <li><a href="#" className="hover:text-white">Placement</a></li>
-                <li><a href="+91 8660618676" className="hover:text-white">Contact</a></li>
-              </ul>
-            </div>
+            {/* Removed Quick Links section here */}
             
             <div>
               <h4 className="font-semibold mb-4">Popular Courses</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="http://localhost:8080/FullStackDevelopment" className="hover:text-white">Full Stack Development</a></li>
-                <li><a href="http://localhost:8080/CloudComputing" className="hover:text-white">Cloud Computing</a></li>
+                <li><Link to="/FullStackDevelopment" className="hover:text-white">Full Stack Development</Link></li>
+                <li><Link to="/CloudComputing" className="hover:text-white">Cloud Computing</Link></li>
               </ul>
             </div>
             
@@ -680,7 +678,7 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91-8660618676</span>
+                  <span>+91-7899304883</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />

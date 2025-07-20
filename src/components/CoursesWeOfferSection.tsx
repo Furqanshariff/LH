@@ -72,15 +72,9 @@ const CoursesWeOfferSection: React.FC = () => (
                 </li>
               ))}
             </ul>
-            {/* Button */}
-            <button
-              className={`mt-auto w-full py-3 rounded-md font-bold text-lg border-2 transition-all duration-200 focus:outline-none ${
-                course.highlight
-                  ? "bg-yellow-400 text-black border-yellow-400 hover:bg-yellow-300"
-                  : "bg-black text-white border-white hover:bg-white hover:text-black"
-              }`}
-            >
-              {course.button}
+            {/* Know More Button */}
+            <button className={`mt-auto w-full py-3 rounded-md font-bold text-lg border-2 transition-all duration-200 focus:outline-none ${course.highlight ? "bg-yellow-400 text-black border-yellow-400 hover:bg-yellow-300" : "bg-white text-black border-white hover:bg-gray-100"}`}>
+              Know More
             </button>
           </div>
         ))}

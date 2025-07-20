@@ -54,18 +54,18 @@ const AnnouncementBar = () => (
 // Company logos marquee for hero section
 const CompanyLogosMarquee = () => (
   <div className="w-full overflow-hidden py-6">
-    <div className="relative w-full h-24 flex items-center"> {/* Increased height for bigger logos */}
-      <div className="absolute flex items-center gap-16 whitespace-nowrap animate-company-marquee"> {/* Increased gap for spacing */}
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-16 inline" /> </span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-16 inline" /></span>
+    <div className="relative w-full h-16 flex items-center md:h-24"> {/* Responsive height */}
+      <div className="flex items-center gap-6 md:gap-16 whitespace-nowrap animate-company-marquee w-max"> {/* Responsive gap, no absolute */}
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-8 md:h-16 inline" /> </span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-8 md:h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-8 md:h-16 inline" /></span>
       </div>
     </div>
     <style>{`
@@ -754,20 +754,10 @@ export default function FullStackDevelopment() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">About Us</a></li>
-                <li><a href="hero" className="hover:text-white">Courses</a></li>
-                <li><a href="#" className="hover:text-white">Placement</a></li>
-                <li><a href="+91 8660618676" className="hover:text-white">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
               <h4 className="font-semibold mb-4">Popular Courses</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="http://localhost:8080/FullStackDevelopment" className="hover:text-white">Full Stack Development</a></li>
-                <li><a href="http://localhost:8080/CloudComputing" className="hover:text-white">Cloud Computing</a></li>
+                <li><Link to="/FullStackDevelopment" className="hover:text-white">Full Stack Development</Link></li>
+                <li><Link to="/CloudComputing" className="hover:text-white">Cloud Computing</Link></li>
               </ul>
             </div>
             
@@ -776,7 +766,7 @@ export default function FullStackDevelopment() {
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+91-8660618676</span>
+                  <span>+91-7899304883</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
