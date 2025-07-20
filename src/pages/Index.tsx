@@ -58,16 +58,16 @@ const CompanyLogosMarquee = () => (
   <div className="w-full overflow-hidden py-6">
     <div className="relative w-full h-24 flex items-center"> {/* Increased height for bigger logos */}
       <div className="absolute flex items-center gap-16 whitespace-nowrap animate-company-marquee"> {/* Increased gap for spacing */}
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="lenskart.png" alt="lenskart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="ola.png" alt="ola electric" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="duolingo.png" alt="duolingo" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-16 inline" /> </span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="adobe.png" alt="adobe" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="accenture.png" alt="accenture" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="meta.png" alt="meta" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-16 inline" /></span>
       </div>
     </div>
     <style>{`
@@ -186,7 +186,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2 group">
-              <img src="/logolh.png" alt="Learnyhive Logo" className="h-14 w-14" />
+              <img src="/images/logolh.png" alt="Learnyhive Logo" className="h-14 w-14" />
               <div className="flex flex-col justify-center ml-2">
                 <span className="text-2xl font-bold leading-tight">
                   <span className="text-black group-hover:text-orange-500 transition">Learny</span><span className="text-orange-500">Hive</span>
@@ -281,7 +281,7 @@ const Index = () => {
               {/* Card 1 */}
               <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between">
                 <div className="w-full h-40 rounded-t-2xl overflow-hidden">
-                  <img src="image9.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
+                  <img src="/images/image9.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
                     </div>
                 <div className="flex flex-col items-center w-full p-6">
                   <div className="flex items-center gap-2 mb-2 mt-2">
@@ -306,7 +306,7 @@ const Index = () => {
               {/* Card 2 */}
               <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-0 w-full max-w-xs flex flex-col items-center min-h-[420px] justify-between">
                 <div className="w-full h-40 rounded-t-2xl overflow-hidden">
-                  <img src="image10.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
+                  <img src="/images/image10.jpg" alt="Program Thumbnail" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col items-center w-full p-6">
                   <div className="flex items-center gap-2 mb-2 mt-2">
@@ -360,7 +360,7 @@ const Index = () => {
             <li className="flex items-center gap-2 text-gray-800"><span className="text-blue-500 text-xl">✓</span> Placement WhatsApp Group Access – Stay plugged into exclusive job opportunities</li>
           </ul>
           <div className="flex justify-center items-center mt-6">
-            <img src="/questionmark.svg" alt="Question Mark" className="w-40 h-40 sm:w-[220px] sm:h-[220px]" />
+            <img src="/images/questionmark.svg" alt="Question Mark" className="w-40 h-40 sm:w-[220px] sm:h-[220px]" />
           </div>
         </div>
       </section>
@@ -532,7 +532,7 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mb-10">
             {/* Row 1 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:row-span-1 lg:col-span-1">
-              <img src="/p1.jpg" alt="Game like Counter Strike" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p1.jpg" alt="Game like Counter Strike" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Game like Counter Strike (3D)</div>
                 <div className="text-gray-600 text-sm">Build 3D games where two teams compete in game modes to complete objectives, such as defuse a bomb or rescuing, etc.</div>
@@ -540,7 +540,7 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
             </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
               <div className="flex items-center justify-center w-full h-28 bg-gray-900 rounded-t-xl">
-                <img src="/p3.png" alt="Face recognition with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
+                <img src="/images/p3.png" alt="Face recognition with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
               </div>
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Face recognition with AI/ML</div>
@@ -548,7 +548,7 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p2.png" alt="Board games bots" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p2.png" alt="Board games bots" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Board games bots</div>
                 <div className="text-gray-600 text-sm">Create unbeatable bots using ML for board games like chess, checkers, etc using adversarial search based algorithms</div>
@@ -556,21 +556,21 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
             </div>
             {/* Row 2 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p4.jpg" alt="IPL Dashboard App" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p4.jpg" alt="IPL Dashboard App" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">IPL Dashboard App</div>
                 <div className="text-gray-600 text-sm">Implementing IPL Dashboard app where users can list off IPL team, individual team details and respective team matches info</div>
               </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p5.jpg" alt="Smart Door Light" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p5.jpg" alt="Smart Door Light" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Smart Door Light</div>
                 <div className="text-gray-600 text-sm">Build a door activated lighting system which will turn on the light as soon as you open the door</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p6.png" alt="Unemployment Trends due to Covid" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p6.png" alt="Unemployment Trends due to Covid" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Unemployment Trends due to Covid</div>
                 <div className="text-gray-600 text-sm">Are young generations most affected by Covid 19? With Data Science, develop hypotheses to statistically analyze the unemployment trends</div>
@@ -578,21 +578,21 @@ Receive a Course Completion Certificate and an Internship Certificate to boost y
             </div>
             {/* Row 3 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p7.jpg" alt="Movie recommendation system with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p7.jpg" alt="Movie recommendation system with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Movie recommendation system with AI/ML</div>
                 <div className="text-gray-600 text-sm">Build a movie recommendation system and compete in a competition similar to the famous 'Netflix Prize'.</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p8.jpg" alt="ECommerce App" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p8.jpg" alt="ECommerce App" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">ECommerce App</div>
                 <div className="text-gray-600 text-sm">Implementing Nxt Trendz Ecommerce application like Amazon where users can login and see products with search, filters, etc..</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p9.jpg" alt="Cyber Warrior Level 1" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p9.jpg" alt="Cyber Warrior Level 1" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Cyber Warrior Level 1</div>
                 <div className="text-gray-600 text-sm">Band up with 5 peers to attack & compromise targets of different difficulty levels to earn the Cyber Warrior Level 1 Badge.</div>

@@ -56,16 +56,16 @@ const CompanyLogosMarquee = () => (
   <div className="w-full overflow-hidden py-6">
     <div className="relative w-full h-24 flex items-center"> {/* Increased height for bigger logos */}
       <div className="absolute flex items-center gap-16 whitespace-nowrap animate-company-marquee"> {/* Increased gap for spacing */}
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="lenskart.png" alt="lenskart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="ola.png" alt="ola electric" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/lenskart.png" alt="lenskart" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/ola.png" alt="ola electric" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="walmart" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="duolingo.png" alt="duolingo" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/duolingo.png" alt="duolingo" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="airbnb" className="h-16 inline" /> </span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="adobe.png" alt="adobe" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="accenture.png" alt="accenture" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/adobe.png" alt="adobe" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/mamaearth.png" alt="mamaearth" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/accenture.png" alt="accenture" className="h-16 inline" /></span>
         <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="google" className="h-16 inline" /></span>
-        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="meta.png" alt="meta" className="h-16 inline" /></span>
+        <span className="text-white text-lg font-medium flex items-center gap-2"> <img src="/images/meta.png" alt="meta" className="h-16 inline" /></span>
       </div>
     </div>
     <style>{`
@@ -130,7 +130,7 @@ export default function FullStackDevelopment() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2 group">
-              <img src="/logolh.png" alt="Learnyhive Logo" className="h-14 w-14" />
+              <img src="/images/logolh.png" alt="Learnyhive Logo" className="h-14 w-14" />
               <div className="flex flex-col justify-center ml-2">
                 <span className="text-2xl font-bold leading-tight">
                   <span className="text-black group-hover:text-orange-500 transition">Learny</span><span className="text-orange-500">Hive</span>
@@ -229,7 +229,7 @@ export default function FullStackDevelopment() {
             <div className="flex justify-center items-center -mt-72 z-10 relative">
               <div className="bg-white rounded-[40px] shadow-2xl p-0 max-w-[440px] w-full flex flex-col items-center overflow-hidden">
                 <div className="w-full h-auto rounded-t-[40px] overflow-hidden flex items-end justify-end relative p-0 m-0">
-                  <img src="image8.jpg" alt="Full Stack Visual" className="w-full h-auto object-cover align-top block p-0 m-0" />
+                  <img src="/images/image8.jpg" alt="Full Stack Visual" className="w-full h-auto object-cover align-top block p-0 m-0" />
                 </div>
                 <div className="grid grid-cols-2 w-full rounded-b-[40px]">
                   <div className="flex flex-col items-center justify-center py-7 bg-white">
@@ -317,7 +317,7 @@ export default function FullStackDevelopment() {
           </div>
           {/* Right: Banner Image */}
           <div className="flex-1 flex justify-center items-center">
-            <img src="image6.jpg" alt="Online Internship Banner" className="rounded-2xl max-w-full max-h-[320px] object-contain shadow-lg" />
+            <img src="/images/image6.jpg" alt="Online Internship Banner" className="rounded-2xl max-w-full max-h-[320px] object-contain shadow-lg" />
           </div>
         </div>
       </section>
@@ -342,7 +342,7 @@ export default function FullStackDevelopment() {
           </div>
           {/* Right: Illustration */}
           <div className="flex-1 flex justify-center items-center">
-            <img src="image5.jpg" alt="Offline Internship Illustration" className="max-w-full max-h-[320px] object-contain" />
+            <img src="/images/image5.jpg" alt="Offline Internship Illustration" className="max-w-full max-h-[320px] object-contain" />
           </div>
           {/* Blue accent line at the bottom */}
           <div className="absolute left-0 right-0 bottom-0 h-2 bg-[#2563eb] rounded-b-none" />
@@ -401,7 +401,7 @@ export default function FullStackDevelopment() {
           </div>
           {/* Right: Banner Image */}
           <div className="flex-1 flex justify-center items-center">
-            <img src="image4.jpg" alt="Online Internship Banner" className="rounded-2xl max-w-full max-h-[320px] object-contain shadow-lg" />
+            <img src="/images/image4.jpg" alt="Online Internship Banner" className="rounded-2xl max-w-full max-h-[320px] object-contain shadow-lg" />
           </div>
         </div>
       </section>
@@ -416,19 +416,19 @@ export default function FullStackDevelopment() {
           {/* Right: Cards */}
           <div className="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full">
             <div className="flex flex-col items-center bg-white rounded-2xl border-2 border-gray-200 p-4 shadow-md">
-              <img src="techg.webp" alt="Tech Graduates" className="h-24 w-24 object-cover rounded-xl mb-2" />
+              <img src="/images/techg.webp" alt="Tech Graduates" className="h-24 w-24 object-cover rounded-xl mb-2" />
               <span className="font-semibold text-center">Tech Graduates</span>
             </div>
             <div className="flex flex-col items-center bg-white rounded-2xl border-2 border-gray-200 p-4 shadow-md">
-              <img src="underg.webp" alt="Undergrads" className="h-24 w-24 object-cover rounded-xl mb-2" />
+              <img src="/images/underg.webp" alt="Undergrads" className="h-24 w-24 object-cover rounded-xl mb-2" />
               <span className="font-semibold text-center">Undergrads</span>
             </div>
             <div className="flex flex-col items-center bg-white rounded-2xl border-2 border-gray-200 p-4 shadow-md">
-              <img src="career.webp" alt="Freshers" className="h-24 w-24 object-cover rounded-xl mb-2" />
+              <img src="/images/career.webp" alt="Freshers" className="h-24 w-24 object-cover rounded-xl mb-2" />
               <span className="font-semibold text-center">Freshers</span>
             </div>
             <div className="flex flex-col items-center bg-white rounded-2xl border-2 border-gray-200 p-4 shadow-md">
-              <img src="wroking.webp" alt="Career Transitioners" className="h-24 w-24 object-cover rounded-xl mb-2" />
+              <img src="/images/wroking.webp" alt="Career Transitioners" className="h-24 w-24 object-cover rounded-xl mb-2" />
               <span className="font-semibold text-center">Career Transitioners</span>
             </div>
           </div>
@@ -527,7 +527,7 @@ export default function FullStackDevelopment() {
             {/* Left: Zoom Screenshot */}
             <div className="w-full md:w-1/2 flex items-center justify-center p-6">
               <img
-                src="programintern.jpeg"
+                src="/images/programintern.jpeg"
                 alt="Zoom Screenshot"
                 className="rounded-lg border border-gray-200 shadow-md max-h-64 object-cover"
               />
@@ -582,7 +582,7 @@ export default function FullStackDevelopment() {
             <li className="flex items-center gap-2 text-gray-800"><span className="text-blue-500 text-xl">✓</span> Placement WhatsApp Group Access – Stay plugged into exclusive job opportunities</li>
           </ul>
           <div className="flex justify-center items-center mt-6">
-            <img src="/questionmark.svg" alt="Question Mark" className="w-40 h-40 sm:w-[220px] sm:h-[220px]" />
+            <img src="/images/questionmark.svg" alt="Question Mark" className="w-40 h-40 sm:w-[220px] sm:h-[220px]" />
           </div>
         </div>
       </section>
@@ -628,7 +628,7 @@ export default function FullStackDevelopment() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mb-10">
             {/* Row 1 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:row-span-1 lg:col-span-1">
-              <img src="/p1.jpg" alt="Game like Counter Strike" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p1.jpg" alt="Game like Counter Strike" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Game like Counter Strike (3D)</div>
                 <div className="text-gray-600 text-sm">Build 3D games where two teams compete in game modes to complete objectives, such as defuse a bomb or rescuing, etc.</div>
@@ -636,7 +636,7 @@ export default function FullStackDevelopment() {
             </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
               <div className="flex items-center justify-center w-full h-28 bg-gray-900 rounded-t-xl">
-                <img src="/p3.png" alt="Face recognition with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
+                <img src="/images/p3.png" alt="Face recognition with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
               </div>
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Face recognition with AI/ML</div>
@@ -644,7 +644,7 @@ export default function FullStackDevelopment() {
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p2.png" alt="Board games bots" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p2.png" alt="Board games bots" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Board games bots</div>
                 <div className="text-gray-600 text-sm">Create unbeatable bots using ML for board games like chess, checkers, etc using adversarial search based algorithms</div>
@@ -652,21 +652,21 @@ export default function FullStackDevelopment() {
             </div>
             {/* Row 2 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p4.jpg" alt="IPL Dashboard App" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p4.jpg" alt="IPL Dashboard App" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">IPL Dashboard App</div>
                 <div className="text-gray-600 text-sm">Implementing IPL Dashboard app where users can list off IPL team, individual team details and respective team matches info</div>
               </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p5.jpg" alt="Smart Door Light" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p5.jpg" alt="Smart Door Light" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Smart Door Light</div>
                 <div className="text-gray-600 text-sm">Build a door activated lighting system which will turn on the light as soon as you open the door</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p6.png" alt="Unemployment Trends due to Covid" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p6.png" alt="Unemployment Trends due to Covid" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Unemployment Trends due to Covid</div>
                 <div className="text-gray-600 text-sm">Are young generations most affected by Covid 19? With Data Science, develop hypotheses to statistically analyze the unemployment trends</div>
@@ -674,21 +674,21 @@ export default function FullStackDevelopment() {
             </div>
             {/* Row 3 */}
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p7.jpg" alt="Movie recommendation system with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p7.jpg" alt="Movie recommendation system with AI/ML" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Movie recommendation system with AI/ML</div>
                 <div className="text-gray-600 text-sm">Build a movie recommendation system and compete in a competition similar to the famous 'Netflix Prize'.</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p8.jpg" alt="ECommerce App" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p8.jpg" alt="ECommerce App" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">ECommerce App</div>
                 <div className="text-gray-600 text-sm">Implementing Nxt Trendz Ecommerce application like Amazon where users can login and see products with search, filters, etc..</div>
                 </div>
                 </div>
             <div className="bg-white rounded-xl shadow-md border border-gray-200 flex flex-col p-0 min-h-[210px] lg:col-span-1">
-              <img src="/p9.jpg" alt="Cyber Warrior Level 1" className="w-full h-28 object-cover rounded-t-xl" />
+              <img src="/images/p9.jpg" alt="Cyber Warrior Level 1" className="w-full h-28 object-cover rounded-t-xl" />
               <div className="p-6">
                 <div className="font-bold text-lg mb-1">Cyber Warrior Level 1</div>
                 <div className="text-gray-600 text-sm">Band up with 5 peers to attack & compromise targets of different difficulty levels to earn the Cyber Warrior Level 1 Badge.</div>

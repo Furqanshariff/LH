@@ -3,27 +3,27 @@ import image1 from "../../image1.webp";
 const gallery = [
   {
     title: "Mystic Mountains",
-    image: "image1.webp",
+    image: "/images/image1.webp",
     button: "Explore Component",
   },
   {
     title: "Enchanted Forest",
-    image: "image2.jpg",
+    image: "/images/image2.jpg",
     button: "Explore Component",
   },
   {
     title: "Desert Mirage",
-    image: "image3.jpg",
+    image: "/images/image3.jpg",
     button: "Explore Component",
   },
   {
     title: "Desert Mirage",
-    image: "image4.jpg",
+    image: "/images/image4.jpg",
     button: "Explore Component",
   },
   {
     title: "Desert Mirage",
-    image: "image5.jpg",
+    image: "/images/image5.jpg",
     button: "Explore Component",
   },
 ];
